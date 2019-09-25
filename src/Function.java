@@ -17,6 +17,10 @@ public class Function {
         this.onTo(this.functionImages);
     }
 
+    /*
+        Tests if a function is one-to-one by iterating through each column. If a column has more than one one it is not one-to-to
+        Ends by printing a string with the results
+     */
     private void oneToOne(int[][] f) {
         boolean oneToOne = false;
         for(int i = 0; i < this.columns; i++) {
@@ -41,6 +45,10 @@ public class Function {
         }
     }
 
+    /*
+        Tests if the function is on to
+        Very similar to the oneToOne function except it is checking for one or more ones compared to zero instead of just 1 vs greater than 1
+    */
     private void onTo(int[][] f) {
         boolean onTo = false;
         for(int i = 0; i < this.columns; i++) {
